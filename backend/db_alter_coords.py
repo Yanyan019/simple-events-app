@@ -1,5 +1,3 @@
-# backend/db_alter_coords.py
-
 import pymongo
 from pymongo import MongoClient
 from datetime import datetime
