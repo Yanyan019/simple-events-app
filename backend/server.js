@@ -9,7 +9,7 @@ dotenv.config();
 const fastify = Fastify({ logger: true });
 
 await fastify.register(cors, { origin: true });
-await fastify.register(formbody); // <- Needed for parsing request.body
+await fastify.register(formbody);
 
 const client = new MongoClient(process.env.MONGODB_URI);
 await client.connect();
